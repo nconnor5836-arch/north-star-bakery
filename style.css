@@ -1,0 +1,171 @@
+/* North Star Bakery - Touchstone 3 */
+
+/* Mobile-first base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fffaf3;
+  color: #3b2a22;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #6b3e26;
+  color: #ffffff;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 15px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+nav a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #f2c078;
+  color: #3b2a22;
+  border-radius: 5px;
+}
+
+/* Main content */
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+section {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #6b3e26;
+  font-family: Georgia, "Times New Roman", serif;
+  margin-top: 0;
+}
+
+/* Images and video */
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 15px auto;
+}
+
+figure {
+  margin: 20px 0;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+/* Form */
+fieldset {
+  border: 2px solid #f2c078;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #6b3e26;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #6b3e26;
+  border-radius: 4px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button {
+  background-color: #6b3e26;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: #f2c078;
+  color: #3b2a22;
+}
+
+/* Footer */
+footer {
+  background-color: #3b2a22;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  main {
+    padding: 40px 0;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  form {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
