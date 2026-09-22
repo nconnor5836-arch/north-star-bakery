@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact North Star Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Contact Us</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Pre-Order or Question</h2>
+
+      <form>
+        <fieldset>
+          <legend>Request Information</legend>
+
+          <label for="name">Name:</label>
+          <input id="name" type="text" required>
+
+          <label for="email">Email:</label>
+          <input id="email" type="email" required>
+
+          <label for="date">Pickup Date:</label>
+          <input id="date" type="date" required>
+
+          <label for="type">Request Type:</label>
+          <select id="type" required>
+            <option value="">Choose</option>
+            <option>Pre-Order</option>
+            <option>General Question</option>
+          </select>
+
+          <label for="details">Item Details:</label>
+          <textarea id="details" required></textarea>
+
+          <label for="allergy">Allergy Notes:</label>
+          <textarea id="allergy"></textarea>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section>
+      <h2>Hours</h2>
+      <p>Mon-Fri: 7 AM-6 PM | Sat: 8 AM-4 PM | Sun: Closed</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 North Star Bakery</p>
+  </footer>
+</body>
+</html>
