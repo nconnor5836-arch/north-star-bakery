@@ -169,3 +169,16 @@ footer {
     margin: 0 auto;
   }
 }
+/* Touchstone 4 JavaScript messages */
+
+.error-message {
+  color: #b00020;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+#favoriteMessage {
+  font-weight: bold;
+  color: #6b3e26;
+  margin-top: 15px;
+}
