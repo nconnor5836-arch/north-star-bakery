@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
   <header>
     <h1>Contact Us</h1>
 
@@ -22,36 +23,41 @@
   </header>
 
   <main>
+
     <section>
       <h2>Pre-Order or Question</h2>
 
-      <form>
+      <form id="contactForm" novalidate>
         <fieldset>
+
           <legend>Request Information</legend>
 
           <label for="name">Name:</label>
-          <input id="name" type="text" required>
+          <input id="name" name="name" type="text">
+          <p id="nameError" class="error-message"></p>
 
           <label for="email">Email:</label>
-          <input id="email" type="email" required>
+          <input id="email" name="email" type="email">
+          <p id="emailError" class="error-message"></p>
 
           <label for="date">Pickup Date:</label>
-          <input id="date" type="date" required>
+          <input id="date" name="date" type="date" required>
 
           <label for="type">Request Type:</label>
-          <select id="type" required>
+          <select id="type" name="type" required>
             <option value="">Choose</option>
-            <option>Pre-Order</option>
-            <option>General Question</option>
+            <option value="Pre-Order">Pre-Order</option>
+            <option value="General Question">General Question</option>
           </select>
 
           <label for="details">Item Details:</label>
-          <textarea id="details" required></textarea>
+          <textarea id="details" name="details" required></textarea>
 
           <label for="allergy">Allergy Notes:</label>
-          <textarea id="allergy"></textarea>
+          <textarea id="allergy" name="allergy"></textarea>
 
           <button type="submit">Submit</button>
+
         </fieldset>
       </form>
     </section>
@@ -60,10 +66,14 @@
       <h2>Hours</h2>
       <p>Mon-Fri: 7 AM-6 PM | Sat: 8 AM-4 PM | Sun: Closed</p>
     </section>
+
   </main>
 
   <footer>
     <p>&copy; 2026 North Star Bakery</p>
   </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
