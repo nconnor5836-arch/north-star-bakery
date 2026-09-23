@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
   <header>
     <h1>Our Products</h1>
 
@@ -22,6 +23,7 @@
   </header>
 
   <main>
+
     <section>
       <h2>Breads</h2>
       <p>Fresh artisan breads: $5-$12.</p>
@@ -45,10 +47,33 @@
       <h2>Cakes</h2>
       <p>Celebration cakes: $25-$75.</p>
     </section>
+
+    <section>
+      <h2>Choose Your Favorite</h2>
+
+      <label for="favoriteProduct">Favorite Product:</label>
+
+      <select id="favoriteProduct">
+        <option value="">Choose a product</option>
+        <option value="Signature Loaf">Signature Loaf</option>
+        <option value="Pastries">Pastries</option>
+        <option value="Celebration Cake">Celebration Cake</option>
+      </select>
+
+      <button type="button" id="saveFavorite">
+        Save Favorite
+      </button>
+
+      <p id="favoriteMessage"></p>
+    </section>
+
   </main>
 
   <footer>
     <p>&copy; 2026 North Star Bakery</p>
   </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
